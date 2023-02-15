@@ -1,0 +1,79 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1599474401169-fabd05f339d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+  }
+main {
+    text-align: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin-left:200px;
+    margin-right:200px;
+}
+footer {
+    text-align: center;
+}
+.question_page {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+   }
+li {
+    margin-bottom: 10px;
+}
+.question_page, .submit_page, .highscore_page, #check_line {
+    display:none;
+}
+.button{
+    background:rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+.button:hover{
+    background-color:rgb(205, 245, 247);
+}
+@media only screen and (max-width: 960px) {
+    body {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/Computer-screen-code-glitch-animation-gif-background-free.gif");
+    }
+    main {
+        margin-left:50px;
+        margin-right:50px;
+    }
+  }
+@media only screen and (max-width: 520px) {
+    body {
+      background-image: url("https://images.unsplash.com/photo-1617609277590-ec2d145ca13b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+      font-size: 130%;
+    }
+    main {
+        margin-left:12px;
+        margin-right:12px;
+    }
+}
